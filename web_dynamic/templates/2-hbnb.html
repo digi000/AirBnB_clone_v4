@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>HBNB</title>
+        <link rel="stylesheet" type="text/css" href="../static/styles/2-hbnb.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="../static/scripts/2-hbnb.js?{{cache_id}}"></script>
+    </head>
+    <body>
+        <header>
+            <div id="api_status"></div>
+            <nav>
+                <div class="logo">
+                    <h1>HBNB</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="amenities">
+                <h2>Amenities</h2>
+                <ul>
+                    <li><input type="checkbox" data-id=":amenity_id" data-name=":amenity_name"> :amenity_name</li>
+                    <!-- repeat for each amenity -->
+                </ul>
+            </section>
+            <section class="selected">
+                <h4></h4>
+            </section>
+        </main>
+        <footer>
+            <p>© 2022 HBNB, Inc.</p>
+        </footer>
+    </body>
+</html>
