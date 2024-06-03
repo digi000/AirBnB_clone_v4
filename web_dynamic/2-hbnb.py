@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""
+ API status
+"""
 from flask import Flask, render_template
 import uuid
 
