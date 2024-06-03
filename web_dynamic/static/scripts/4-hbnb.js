@@ -1,14 +1,6 @@
 window.addEventListener('load', function () {
 
-    $(document).ready(function () {
-        const elements = document.querySelectorAll("div.amenities h4");
-        $('button[type="button"]').click(function () {
-            console.log(elements);
-            elements.forEach(element => {
-                console.log(element.textContent);
-            });
-        });
-    });
+    
   
     $('button[type="button"]').click(function () {
         $.ajax({
@@ -18,7 +10,7 @@ window.addEventListener('load', function () {
           data: JSON.stringify({ amenities: Object.keys(amenityIds) })
         }).done(function (data) {
           $('section.places').empty();
-          $('section.places').append('<h1>Places</h1>');
+          
           for (const place of data) {
             const template = `<article>
             <div class="title">
