@@ -16,7 +16,7 @@ header {
 	align-items: center;
 }
 
-#api_status{
+header div{
     border-radius: 50%;
     width: 40px;
     height: 40px;
